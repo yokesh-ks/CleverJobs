@@ -1,0 +1,204 @@
+body{
+    font-family: "Merriweather", sans-serif;
+    margin: 0;
+    color: white;
+    background: #11121A;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background: #1C1C24;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.header-container {
+    max-width: 1250px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.header-container .logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header-container .logo img {
+    height: 100%;
+}
+
+.search {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.search-container {
+    background: #1C1C24;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #222328;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.input-container {
+    flex-grow: 1;
+    display: flex;
+}
+
+.input-container input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.input-container i {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.button-container {
+    background: #3060FF;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button-container:hover {
+    background: #5a81ff;
+}
+
+.job-list {
+    max-width: 1250px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+
+.job-list h1 {
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.job-container {
+    display: grid;
+    gap: 40px;
+    flex-grow: 1;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.job-tile {
+    background: #1C1C24;
+    border-radius: 10px;
+    border: 2px solid #222328;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 30px;
+    transition: transform 0.2s
+}
+
+.job-tile:hover {
+    transform: scale(1.05);
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.top img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.rolename {
+    padding: 20px 0px;
+}
+
+.rolename span {
+    font-size: 22px;
+}
+
+.description {
+    flex-grow: 1;
+    height: 105px;
+    overflow: hidden;
+    font-size: 18px;
+    color: #96939B;
+}
+
+.buttons {
+    color: black;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+}
+
+.button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #96939B;
+    background-color: #2E2E39;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.apply-now {
+    color: white;
+    background: #3060FF;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 938px) {
+    .job-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .job-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .job-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .input-container input {
+        width: 100px;
+    }
+
+}
